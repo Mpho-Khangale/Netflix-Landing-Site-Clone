@@ -124,3 +124,84 @@ body {
 .email-signup button:hover {
   background-color: #ff1f1f;
 }
+
+/* TRENDING SECTION */
+
+.trending {
+  padding: 60px 10%;
+  background: #000;
+  color: #fff;
+}
+
+.trending h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* WRAPPER */
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* SCROLLABLE ROW */
+.carousel {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+/* EACH MOVIE CARD */
+.movie {
+  position: relative;
+  min-width: 180px;
+  transition: transform 0.3s;
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.movie:hover {
+  transform: scale(1.08);
+}
+
+/* RANK NUMBER STYLE */
+.rank {
+  position: absolute;
+  bottom: 10px;
+  left: -10px;
+
+  font-size: 70px;
+  font-weight: 800;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+/* ARROWS */
+.arrow {
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  z-index: 10;
+}
+
+.arrow:hover {
+  background: rgba(255,255,255,0.2);
+}
