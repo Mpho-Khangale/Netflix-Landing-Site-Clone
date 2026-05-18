@@ -205,3 +205,88 @@ body {
 .arrow:hover {
   background: rgba(255,255,255,0.2);
 }
+
+/* ========================================= */
+/* MORE REASONS SECTION */
+/* ========================================= */
+
+.reasons {
+  padding: 60px 8%;
+  background-color: black;
+  color: white;
+}
+
+.reasons h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+/* GRID LAYOUT */
+
+.reasons-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+/* INDIVIDUAL CARD */
+
+.reason-card {
+  position: relative;
+
+  background: linear-gradient(
+    145deg,
+    #1d1f4a,
+    #1a0f1f
+  );
+
+  border-radius: 20px;
+
+  padding: 30px 25px;
+
+  min-height: 320px;
+
+  overflow: hidden;
+
+  transition: transform 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.reason-card:hover {
+  transform: translateY(-8px);
+}
+
+/* CARD TITLE */
+
+.reason-card h3 {
+  font-size: 30px;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+
+  line-height: 1.2;
+}
+
+/* CARD TEXT */
+
+.reason-card p {
+  font-size: 20px;
+  color: #cfcfcf;
+
+  line-height: 1.5;
+}
+
+/* ICON */
+
+.reason-icon {
+  width: 70px;
+
+  position: absolute;
+
+  bottom: 20px;
+  right: 20px;
+}
+
