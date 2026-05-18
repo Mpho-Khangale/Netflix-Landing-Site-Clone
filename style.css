@@ -290,3 +290,291 @@ body {
   right: 20px;
 }
 
+VIDEO SECTION */
+/* ========================================= */
+
+.video-section {
+  text-align: center;
+  padding: 80px 10%;
+  border-top: 8px solid #222;
+}
+
+.video-section h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.video-section p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.video-section video {
+  width: 100%;
+  max-width: 800px;
+
+  border-radius: 10px;
+  border: 3px solid #333;
+}
+
+/* ========================================= */
+/* FAQ SECTION */
+/* ========================================= */
+
+.faq {
+  padding: 80px 10%;
+  border-top: 8px solid #222;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+/* FAQ BOX */
+
+details {
+  background-color: #303030;
+
+  max-width: 800px;
+  margin: 15px auto;
+
+  padding: 20px;
+  border-radius: 5px;
+
+  text-align: left;
+  transition: 0.3s;
+}
+
+details:hover {
+  background-color: #444;
+}
+
+/* FAQ QUESTION */
+
+summary {
+  font-size: 22px;
+  font-weight: 600;
+
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Remove default arrow */
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* FAQ ANSWER */
+
+details p {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ========================================= */
+/* BOTTOM SIGNUP SECTION */
+/* ========================================= */
+
+.bottom-signup {
+  padding: 80px 10%;
+  border-top: 8px solid #222;
+
+  text-align: center;
+}
+
+.bottom-signup h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.bottom-signup p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* ========================================= */
+/* FOOTER */
+/* ========================================= */
+
+footer {
+  border-top: 8px solid #222;
+
+  padding: 60px 10%;
+  color: #999;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+/* FOOTER LINKS */
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.footer-links a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 14px;
+}
+
+/* ========================================= */
+/* RESPONSIVE DESIGN */
+/* ========================================= */
+
+@media (max-width: 992px) {
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content h3 {
+    font-size: 24px;
+  }
+
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature.reverse {
+    flex-direction: column;
+  }
+
+  .feature-text h2 {
+    font-size: 38px;
+  }
+
+  .feature-text p {
+    font-size: 20px;
+  }
+}
+
+/* ========================================= */
+/* MOBILE DEVICES */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+  .logo {
+    width: 110px;
+  }
+
+  .hero {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .hero-content {
+    position: static;
+    transform: none;
+
+    margin-top: 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content h3 {
+    font-size: 20px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  /* STACK FORM */
+
+  .email-signup {
+    flex-direction: column;
+  }
+
+  .email-signup input {
+    width: 100%;
+  }
+
+  .email-signup button {
+    width: 100%;
+  }
+
+  .feature {
+    padding: 60px 5%;
+  }
+
+  .feature-text h2 {
+    font-size: 32px;
+  }
+
+  .feature-text p {
+    font-size: 18px;
+  }
+
+  .video-section h2,
+  .faq h2 {
+    font-size: 32px;
+  }
+
+  summary {
+    font-size: 18px;
+  }
+
+  details p {
+    font-size: 16px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================= */
+/* SMALL MOBILE DEVICES */
+/* ========================================= */
+
+@media (max-width: 480px) {
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content h3 {
+    font-size: 18px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .feature-text h2 {
+    font-size: 28px;
+  }
+
+  .video-section h2,
+  .faq h2,
+  .bottom-signup h2 {
+    font-size: 28px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}
+
